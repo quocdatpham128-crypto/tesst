@@ -1,36 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F0F2F5"
     android:fitsSystemWindows="true"
-    android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/edtTenSanPham_205"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:hint="@string/hint_ten_san_pham"
-        android:inputType="text"
-        android:minHeight="48dp" />
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <Button
-        android:id="@+id/btnXacNhan_205"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/btn_xac_nhan" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="QUẢN LÝ CHI TIÊU"
+            android:textColor="#6200EE"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/txtHienThi_205"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:padding="20dp">
 
-</LinearLayout>
+            <EditText
+                android:id="@+id/edtTenKhoanChi_205"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:hint="Nhập tên khoản chi"
+                android:inputType="text"
+                android:paddingHorizontal="16dp" />
+
+            <EditText
+                android:id="@+id/edtSoTien_205"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:hint="Nhập số tiền"
+                android:inputType="numberDecimal"
+                android:paddingHorizontal="16dp" />
+
+            <EditText
+                android:id="@+id/edtGhiChu_205"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="12dp"
+                android:autofillHints=""
+                android:hint="Nhập ghi chú"
+                android:inputType="text"
+                android:paddingHorizontal="16dp" />
+
+            <CheckBox
+                android:id="@+id/chkDaThanhToan_205"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đã thanh toán"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnThemKhoanChi_205"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#6200EE"
+            android:text="Thêm khoản chi"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnXemChiTiet_205"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="#03DAC5"
+            android:text="Xem chi tiết khoản chi"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
