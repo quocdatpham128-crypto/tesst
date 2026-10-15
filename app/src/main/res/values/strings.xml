@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">tesst</string>
+    <string name="hint_ten_san_pham">Nhập tên sản phẩm</string>
+    <string name="btn_xac_nhan">Xác nhận</string>
+</resources>
